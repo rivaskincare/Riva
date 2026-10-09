@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RIVA — Fresh Skin, Naturally</title>
+<meta name="description" content="RIVA — simple, refreshing botanical gel cleansers with Rose Water, Aloe Vera and Hyaluronic Acid. Fresh skin, naturally.">
+<meta name="theme-color" content="#F7F4E8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RIVA — Fresh Skin, Naturally">
+<meta property="og:description" content="Simple, refreshing botanical gel cleansers for an everyday routine.">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preload" href="js/app.js" as="script">
+</head>
+<body>
+<header id="hd"><div class="wrap"><div class="in">
+<button class="ib" id="burger" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<a href="#/" class="logo" id="logo" aria-label="RIVA home"></a>
+<nav class="d" id="nav" aria-label="Main"></nav>
+<div class="ic"><button class="ib" id="sb" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+<a class="ib" href="#/contact" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></a>
+<button class="ib" id="cb" aria-label="Open cart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8a3 3 0 0 1 6 0"/></svg><span class="bdg" id="cc">0</span></button></div></div>
+<div class="sr" id="sr"><input id="si" type="search" placeholder="Search RIVA products…" aria-label="Search products"><div id="sres"></div></div></div></header>
+<div class="mob glass" id="mob"></div>
+<main id="app"><noscript><p style="padding:40px;text-align:center">Please enable JavaScript to view the RIVA website.</p></noscript></main>
+<div id="foot"></div>
+<div class="ov" id="ov"></div><aside class="dr" id="dr" aria-label="Cart"></aside>
+
+<!-- RIVA AI chat widget -->
+<button id="riva-chat-launcher" type="button" aria-label="Open RIVA AI" aria-expanded="false">
+  <span class="riva-chat-dot" aria-hidden="true"></span><span>Ask RIVA AI</span>
+</button>
+<section id="riva-chat-panel" role="dialog" aria-label="RIVA AI chat" aria-modal="false">
+  <header class="riva-chat-head">
+    <div class="riva-chat-brand">
+      <div class="riva-chat-avatar" aria-hidden="true">R</div>
+      <div><h3>RIVA AI</h3><small>Here to help with your Riva routine</small></div>
+    </div>
+    <button class="riva-chat-close" id="riva-chat-close" type="button" aria-label="Close chat">×</button>
+  </header>
+  <div id="riva-chat-messages" aria-live="polite" aria-label="Chat messages"></div>
+  <form class="riva-chat-form" id="riva-chat-form">
+    <input id="riva-chat-input" type="text" maxlength="500" autocomplete="off" placeholder="Ask a question…" aria-label="Your message" required>
+    <button id="riva-chat-send" type="submit">Send</button>
+  </form>
+  <div class="riva-chat-note">Starter mode: product help and common questions. Not connected to a live AI model yet.</div>
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/assets.js"></script>
+</body>
+</html>
